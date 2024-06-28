@@ -107,3 +107,27 @@ foreach ($posts as $post) {
   // foreach($posts as $post){
   //   echo $post->title . '<br>';
   // }
+
+
+/*
+From a comment 
+Here's the code for anyone wanting to create the table. I've chosen the table name as posts
+
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `body` text NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `is_published` tinyint(1) NOT NULL DEFAULT 1,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+
+*/   
